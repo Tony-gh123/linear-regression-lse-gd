@@ -54,7 +54,7 @@ A few points exceed ±20, indicating potential influential observations, but ove
 
 <img src="figures/model_convergence.png" alt="data_results">
 
-_F**Figure 4.** Cost function (½ MSE) vs. iteration during training on standardized Math scores (α = 0.01, 1000 iterations).
+_**Figure 4.** Cost function (½ MSE) vs. iteration during training on standardized Math scores (α = 0.01, 1000 iterations).
 The cost drops sharply in the first 200 iterations and plateaus near zero by iteration ~400, confirming successful convergence to the minimum. The smooth, monotonic decrease validates stable learning and appropriate learning rate._
 
 ### **Linear Regression Model Results**
