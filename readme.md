@@ -2,10 +2,10 @@
 
 DATA: [OpenIntro (hsb2) High School and Beyond survey](https://www.openintro.org/data/index.php?data=hsb2)
 
-**Goal**: Predict a student Science Score based on their Math Score.
+**Goal**: Predict a student science score based on their math score.
 
-**X-Features**: Math Scores \
-**Y-Targets**: Science Scores
+**X-Features**: math scores \
+**Y-Targets**: science scores
 
 **(Quick) Data Quality Check** \
 Total 200 samples \
@@ -16,17 +16,17 @@ Correlation: 0.631
 
 <img src="figures/data_check.png" alt="data_quality" width="60%">
 
-_**Figure 1.** Exploratory Data Analysis of Math and Science Scores
-Left: Scatter plot of Math vs. Science scores (n=200) showing a moderate positive linear relationship (Pearson r = 0.631).
-Right: Overlaid histogram of score distributions. Both variables are roughly normally distributed, with Math slightly more peaked (mean=52.6, σ=9.3) and Science slightly flatter (mean=51.9, σ=9.9). No missing values or extreme outliers detected._
+_**Figure 1.** Exploratory Data Analysis of math and science scores
+Left: Scatter plot of math vs. science scores (n=200) showing a moderate positive linear relationship (Pearson r = 0.631).
+Right: Overlaid histogram of score distributions. Both variables are roughly normally distributed, with math slightly more peaked (mean=52.6, σ=9.3) and science slightly flatter (mean=51.9, σ=9.9). No missing values or extreme outliers detected._
 
 ### **Model Prediction**
 
-Prediction: **A student who scores 40 in Math, is predicted to score a 43 in Science.**
+Prediction: **A student who scores 40 in math, is predicted to score a 43 in science.**
 
 $$f(x) = 0.66x + 16.75$$
 
-The model has an average prediction error of ±7.8 Science points.
+The model has an average prediction error of ±7.8 science points.
 
 **Our LinearRegression Model Results** \
 w (slope)     = 0.666551 \
@@ -41,25 +41,25 @@ R²          = 0.397824
 <img src="figures/linear_regression_fit.png" alt="data_results">
 
 _**Figure 2.** Simple Linear Regression Fit
-Scatter plot of Math vs. Science scores with fitted regression line:
+Scatter plot of math vs. science scores with fitted regression line:
 ŷ = 0.667x + 16.8
-The line captures the overall upward trend, confirming a positive association. Data points are symmetrically scattered around the line, supporting the linearity assumption. R² = 0.398 indicates that ~40% of the variation in Science scores is explained by Math scores._
+The line captures the overall upward trend, confirming a positive association. Data points are symmetrically scattered around the line, supporting the linearity assumption. R² = 0.398 indicates that ~40% of the variation in science scores is explained by math scores._
 
 <img src="figures/residuals_plot.png" alt="data_results"> 
 
 _**Figure 3.** Residuals vs. Predicted Values
-Plot of residuals (observed − predicted Science scores) against predicted values.
+Plot of residuals (observed − predicted science scores) against predicted values.
 Points are randomly scattered around the zero line with no obvious curvature or funnel shape, supporting linearity and homoscedasticity.
 A few points exceed ±20, indicating potential influential observations, but overall, model assumptions are reasonably met._
 
 <img src="figures/model_convergence.png" alt="data_results">
 
-_**Figure 4.** Cost function (½ MSE) vs. iteration during training on standardized Math scores (α = 0.01, 1000 iterations).
+_**Figure 4.** Cost function (½ MSE) vs. iteration during training on standardized math scores (α = 0.01, 1000 iterations).
 The cost drops sharply in the first 200 iterations and plateaus near zero by iteration ~400, confirming successful convergence to the minimum. The smooth, monotonic decrease validates stable learning and appropriate learning rate._
 
 ### **Linear Regression Model Results**
 
-The model explains about 40% of the variability in students’ Science scores based on their Math scores, indicating a moderate linear relationship. While Math score is a useful predictor, other factors surely contribute significantly to Science score performance.
+The model explains about 40% of the variability in students’ science scores based on their math scores, indicating a moderate linear relationship. While math score is a useful predictor, other factors surely contribute significantly to science score performance.
 
 **Note On Standardization**: I found it useful to standardize our feature variable (x). Standardization helps the model converge faster by reducing the range and centering the data around zero, which allows us to use a larger learning rate and achieve faster computation. After training, we de-standardize the model parameters to interpret the results in the original data units.
 
