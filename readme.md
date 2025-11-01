@@ -1,4 +1,4 @@
-## Simple Linear Regression via Gradient Descent (Least Squares)
+## Simple Linear Regression with Gradient Descent + Least Squares
 
 DATA: [OpenIntro (hsb2) High School and Beyond survey](https://www.openintro.org/data/index.php?data=hsb2)
 
