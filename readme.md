@@ -47,9 +47,7 @@ The line captures the overall upward trend, confirming a positive association. D
 
 <img src="figures/residuals_plot.png" alt="data_results"> 
 
-_**Figure 3.** Residuals vs. Predicted Values
-Plot of residuals (observed − predicted science scores) against predicted values.
-Points are randomly scattered around the zero line with no obvious curvature or funnel shape, supporting linearity and homoscedasticity.
+_**Figure 3.** Residuals vs. Predicted Values. Points are randomly scattered around the zero line with no obvious curvature or funnel shape, supporting linearity and homoscedasticity.
 A few points exceed ±20, indicating potential influential observations, but overall, model assumptions are reasonably met._
 
 <img src="figures/model_convergence.png" alt="data_results">
