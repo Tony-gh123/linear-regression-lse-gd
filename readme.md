@@ -104,7 +104,13 @@ For all $m$ training examples, we define the **Sum of Squared Errors (SSE)** as:
 
 $$\text{SSE}(w,b) = \sum_{i=1}^{m} \big( f_{w,b}(x^{(i)}) - y^{(i)} \big)^2$$
 
-This represents the **total** error across all samples.
+This represents the **total** error across all samples. 
+
+The **Ordinary Least Squares (OLS)** theory refers to fitting a model by minimizing the **sum of squared residuals**. This can be solved in two ways:
+1. **Analytically**: Normal equations (closed-form)
+2. **Numerically**: Gradient descent on ½ MSE
+
+This project uses method #2, which we will derive in the following steps. 
 
 To obtain an average measure of model error per observation, we divide by 𝑚, the number of training examples. This converts the Sum of Squared Errors (SSE) into the Mean Squared Error (MSE):
 
@@ -140,7 +146,8 @@ $$\frac{\partial J(w,b)}{\partial b} = \frac{1}{m}\sum_{i=1}^{m}\big(f_{w,b}(x^{
 
 After computing each partial derivative, we can plug them back into the parameter update function and iteratively perform updates as shown in the gradient descent algorithm, until our model converges, meaning the values of w and b are no longer significantly updated.
 
-Repeat until convergence
+### Gradient Descent Update Rule
+Repeat until convergence:
 
 $$w \leftarrow w - \alpha\frac{1}{m}\sum_{i=1}^{m}\big(f_{w,b}(x^{(i)}) - y^{(i)}\big)x^{(i)}$$
 
