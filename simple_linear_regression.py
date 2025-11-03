@@ -33,7 +33,7 @@ def compute_gradient(x, y, w, b):
         dj_dw_i = (f_wb - y[i]) * x[i]    # compute gradient ∂J/∂w at i-th iteration
         dj_db_i = f_wb - y[i]             # compute gradient ∂J/∂b at i-th iteration
 
-        # update the gradients
+        # accumulate for all examples
         dj_dw += dj_dw_i
         dj_db += dj_db_i
 
