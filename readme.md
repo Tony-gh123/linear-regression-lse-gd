@@ -7,7 +7,7 @@ DATA: [OpenIntro (hsb2) High School and Beyond survey](https://www.openintro.org
 **X-Features**: math scores \
 **Y-Targets**: science scores
 
-**(Quick) Data Quality Check** (data_quality.ipynb) \
+**Data Quality Check** (data_quality.ipynb)
 
 <img src="figures/data_check.png" alt="data_quality" width="60%">
 
