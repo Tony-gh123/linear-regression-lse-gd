@@ -7,12 +7,7 @@ DATA: [OpenIntro (hsb2) High School and Beyond survey](https://www.openintro.org
 **X-Features**: math scores \
 **Y-Targets**: science scores
 
-**(Quick) Data Quality Check** \
-Total 200 samples \
-math:  min=33.0, max=75.0, mean=52.6, std=9.3, total=200.0 \
-science: min=26.0, max=74.0, mean=51.9, std=9.9, total=200.0 \
-Missing-values: math: 0, science: 0 \
-Correlation: 0.631
+**(Quick) Data Quality Check** (data_quality.ipynb) \
 
 <img src="figures/data_check.png" alt="data_quality" width="60%">
 
