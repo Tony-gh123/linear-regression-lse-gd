@@ -11,9 +11,8 @@ DATA: [OpenIntro (hsb2) High School and Beyond survey](https://www.openintro.org
 
 <img src="figures/data_check.png" alt="data_quality" width="60%">
 
-_**Figure 1.** Exploratory Data Analysis of math and science scores
-Left: Scatter plot of math vs. science scores (n=200) showing a moderate positive linear relationship (Pearson r = 0.631).
-Right: Overlaid histogram of score distributions. Both variables are roughly normally distributed, with math slightly more peaked (mean=52.6, σ=9.3) and science slightly flatter (mean=51.9, σ=9.9). No missing values or extreme outliers detected._
+_**Figure 1.** Left: Scatter plot of math vs. science scores (n=200) showing a moderate positive linear relationship (Pearson r = 0.631).
+Right: Overlaid histogram of score distributions._
 
 ### **Model Prediction**
 
