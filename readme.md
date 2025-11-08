@@ -2,7 +2,7 @@
 
 DATA: [OpenIntro (hsb2) High School and Beyond survey](https://www.openintro.org/data/index.php?data=hsb2)
 
-**Goal**: Predict a student science score based on their math score.
+**Goal**: Predicting a student's exam score.
 
 **X-Features**: math scores \
 **Y-Targets**: science scores
